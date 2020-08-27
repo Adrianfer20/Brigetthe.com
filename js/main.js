@@ -285,13 +285,14 @@
 
     // Event Window;
     window.addEventListener('load', (e)=>{
-        if(pathnameNow === '/historia.html'){
+        if(pathnameNow.search('historia.html') != -1){
             console.log("cargando contenido para: "+pathnameNow);
             $post('js/historys.json');
-        }else if(pathnameNow === '/novedad.html'){
+        }else if(pathnameNow.search('novedad.html') != -1){
             console.log("cargando contenido para: "+pathnameNow);
             $post('js/novedades.json');
         }
+
 
         requestHandlerHistorys(0);
         requestHandlerNovedades(0);
