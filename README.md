@@ -1,0 +1,2 @@
+# brigetthe.com
+blog
