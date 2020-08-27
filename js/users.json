@@ -1,0 +1,14 @@
+[
+    {
+        "user":"brigetthe",
+        "password":"1234",
+        "email":"brigetthe@gmail.com",
+        "sexo":"femenino"
+    },
+    {
+        "user":"adrianfer",
+        "password":"1234",
+        "email":"adrianfer@gmail.com",
+        "sexo":"masculimo"
+    }
+]

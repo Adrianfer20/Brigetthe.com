@@ -1,0 +1,110 @@
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  outline: none;
+}
+.card-profile {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #e71d36;
+}
+.font-pacifico {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+
+.bg-primary {
+  background-color: #e71d36;
+}
+.bg-dark {
+  background-color: #011627;
+}
+
+.text-white {
+  color: #fdfffc;
+}
+.text-primary {
+  color: #e71d36;
+}
+
+.inset-y-middle {
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.check{
+  height: 14.5px;
+  width: 14.5px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+
+
+  background-color: #f7fafc;
+  box-shadow: 0 0 0 2px #4a5568;
+  border-radius: 50%;
+  cursor:pointer;
+}
+
+.checkActivo{
+  background: rgb(74,85,104);
+background: -moz-radial-gradient(circle, rgba(74,85,104,1) 45%, rgba(247,250,252,1) 50%);
+background: -webkit-radial-gradient(circle, rgba(74,85,104,1) 45%, rgba(247,250,252,1) 50%);
+background: radial-gradient(circle, rgba(74,85,104,1) 45%, rgba(247,250,252,1) 50%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4a5568",endColorstr="#f7fafc",GradientType=1);
+}
+
+.preloader-card::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 15%;
+
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: preloaderCard;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, transparent 8%,#e2e8f0 14%, transparent 28%);
+}
+.d-none{display: none;}
+@keyframes preloaderCard{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
+.preloader-post::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 15%;
+
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: preloaderPost;
+  animation-timing-function: linear;
+  background: linear-gradient(to right, transparent 8%,#fff 14%, transparent 28%);
+}
+@keyframes preloaderPost{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: 100%;
+  }
+}
